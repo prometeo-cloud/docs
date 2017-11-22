@@ -3,6 +3,7 @@
 | Role  |  Description |  
 |---|---|
 | [DOCKER_MANAGE_HOSTS](https://github.com/prometeo-cloud/docker_manage_hosts) | Manage docker hosts and images. |
+| [NEXUS_INSTALL_APPLICATION](https://github.com/prometeo-cloud/nexus_install_application) | Installs a  containerised Nexus repository on a Docker host. |
 | [OCP_CONFIGURE_NODE](https://github.com/prometeo-cloud/ocp_configure_node)  | Configures an OCP Node ready for OCP deployment. |
 | [RHEL_REGISTER_NODE](https://github.com/prometeo-cloud/rhel_register_node) | Registers a RHEL instance with Satellite or Red Hat repositories |
 | [RHIDM_INSTALL_APPLICATION](https://github.com/prometeo-cloud/rhidm_install_application)  | Installs Red Hat Identity Manager.  |
