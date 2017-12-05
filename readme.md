@@ -11,3 +11,5 @@
 - [Way of Working](./wayofworking.md)
 
 ### [HOW TO](./how-tos.md)
+
+### [OCP CLI Recipes](./ocp-cli/index.md)
