@@ -12,4 +12,4 @@
 
 ### [HOW TO](./how-tos.md)
 
-### [OCP CLI Recipes](./ocp-cli/index.md)
+### [OCP CLI Recipes](./ocp-cli/readme.md)
