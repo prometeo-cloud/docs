@@ -1,19 +1,26 @@
 # How to create a Service Account for Automating OCP
 
+
+### How to create a token
+
 ```bash
-# logs as a sysadmin
+# log in as sys admin
 $ oc login -u system:admin
 
-# switches to the default project
-oc project default
+# creates a service account
+$ oc create sa automator
 
-# creates a service account to be used 
-oc create serviceaccount automator
+# adds the account to the admin role
+$ oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:default:automator
 
-# add the role cluster-admin to the user
-oc policy add-role-to-user cluster-admin automator
+# gets the value of the token using the name
+$ oc serviceaccounts get-token automator
+```
 
-# get the token
-oc describe sa automator | grep Tokens
+### How to check access rights
+
+```bash
+$ oc get sa automator -o yaml
+$ oc policy who-can create ProjectRequest
 ```
 
