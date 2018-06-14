@@ -7,9 +7,9 @@
 
 ### Development Documentation
 
-- [Development Principles](./principles.md)
-- [Way of Working](./wayofworking.md)
+- [Development Principles](develop/principles.md)
+- [Way of Working](develop/wayofworking.md)
 
-### [HOW TO](./how-tos.md)
+### [HOW TO](develop/how-tos.md)
 
 ### [OCP CLI Recipes](./ocp-cli/readme.md)
