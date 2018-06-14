@@ -13,4 +13,8 @@
 | **Cluster Management** |||
 | C01 | Scale Out Compute | Adds one or more new compute nodes to an OCP cluster. |
 | C02 | Scale In Compute | Decommissions one or more compute nodes from an OCP cluster. |
+| C03 | Add Storage | Add storage to existing storage node(s) |
+| C04 | Remove Storage | Remove storage from existing storage node(s) |
+| C05 | Add storage nodes | Add new storage nodes to an OCP cluster |
+| C06 | Upgrade Cluster | Upgrade entire OCP cluster to specified OCP version |
 
