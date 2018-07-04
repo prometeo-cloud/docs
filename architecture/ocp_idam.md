@@ -106,4 +106,6 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 
 8. OCP uses the [OpenIDIdentityProvider](https://docs.openshift.com/container-platform/3.9/install_config/configuring_authentication.html#OpenID) to query the OpenID server and check the user name and password provided are correct.
 
-9. OCP allocates access rights to the user based on the information stored in the role bindings.
+9. The OpenID server check credentials, in the LDAP server.
+
+10. OCP allocates access rights to the user based on the information stored in the role bindings.

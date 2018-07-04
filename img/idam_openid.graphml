@@ -91,7 +91,7 @@ Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
           <y:Geometry height="20.785302256937598" width="22.91177096687511" x="588.2624739461908" y="51.8552388345515"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Futura" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.580078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="11.40625" x="5.752760483437612" xml:space="preserve" y="0.602612065968799">1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Futura" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.580078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="11.40625" x="5.752760483437555" xml:space="preserve" y="0.602612065968799">1<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -163,7 +163,6 @@ Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       </data>
     </node>
     <node id="n13">
-      <data key="d5"/>
       <data key="d6">
         <y:SVGNode>
           <y:Geometry height="64.96826171875" width="56.554100036621094" x="51.44106072335738" y="194.54429969949757"/>
@@ -202,7 +201,7 @@ Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
     <node id="n16">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="20.785302256937598" width="22.91177096687511" x="303.8562652517905" y="281.5151522477078"/>
+          <y:Geometry height="20.785302256937598" width="22.91177096687511" x="482.8562652517905" y="116.51515224770782"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Futura" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.580078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="11.40625" x="5.752760483437555" xml:space="preserve" y="0.602612065968799">9<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -211,7 +210,6 @@ Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       </data>
     </node>
     <node id="n17">
-      <data key="d5"/>
       <data key="d6">
         <y:SVGNode>
           <y:Geometry height="64.63923645019531" width="56.554100036621094" x="639.0570461301697" y="52.459352592655094"/>
@@ -231,9 +229,20 @@ Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
           <y:Geometry height="81.0" width="90.88741449623035" x="386.9106967819321" y="17.4456202104846"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Futura" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.353515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.849609375" x="19.018902560615174" xml:space="preserve" y="20.3232421875">OpenId
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Futura" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.353515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.849609375" x="19.018902560615174" xml:space="preserve" y="20.323242187500007">OpenId
 Server<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
+      </data>
+    </node>
+    <node id="n19">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="20.785302256937598" width="22.91177096687511" x="339.712530503581" y="168.03030449541563"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Futura" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.580078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="18.8125" x="2.049635483437555" xml:space="preserve" y="0.602612065968799">10<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
       </data>
     </node>
     <edge id="e0" source="n0" target="n1">
@@ -327,7 +336,6 @@ create project_users ldap group<y:LabelModel><y:SmartEdgeLabelModel autoRotation
       </data>
     </edge>
     <edge id="e7" source="n17" target="n1">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-0.5173511857040012" sy="-5.296413590677176" tx="0.0" ty="0.0">
@@ -342,7 +350,6 @@ access group(s)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
       </data>
     </edge>
     <edge id="e8" source="n13" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -354,7 +361,6 @@ access group(s)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
       </data>
     </edge>
     <edge id="e9" source="n0" target="n18">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-7.7328228570171404" ty="-4.27246809016367">
@@ -370,7 +376,6 @@ access group(s)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
       </data>
     </edge>
     <edge id="e10" source="n0" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -379,6 +384,19 @@ access group(s)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="plain"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Futura" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.580078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.59765625" x="-10.876663680714955" xml:space="preserve" y="-121.01611615527557">allocates access rights <y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="67.12242482205986" distanceToCenter="true" position="left" ratio="0.2642363176109379" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n18" target="n1">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Futura" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="35.16015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.58203125" x="-38.768425245508865" xml:space="preserve" y="27.182114914812615">check 
+credentials<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
