@@ -50,7 +50,7 @@ The following default cluster roles have role bindings to the LDAP server:
 
 This section describes the integration points with the Identity and Access Management functions.
 
-### Authenticating with LDAP
+### LDAP Authentication + LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for LDAP based authentication and LDAP sync for access control: 
 
@@ -79,8 +79,31 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 
 9. OCP allocates access rights to the user based on the information stored in the role bindings.
 
-### Authenticating with OpenID
+### OpenID Authentication + LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for OpenId authentication with LDAP sync for access control: 
 
 <img src="../img/idam_openid.png"></img>
+
+1. An organisation managing access via their LDAP servers uses its 
+standard on-boarding process to add and remove users from their servers.
+
+2. Either a user fills a form on a self service portal or an ops person executes an Ansible playbook to create one or more OCP projects.
+
+3. The playbook creates two groups per OCP project in the LDAP server. 
+The group names follow a specific naming convention. 
+One group is for standard project users and the other group is for project admins.
+
+4. The playbook creates the required objects in OCP, namely project(s), and role bindings.
+Role binding information is used by the LDAP sync function to add users from the LDAP server to the role bindings in OCP.
+
+5. An organisation admin puts users into the access groups automatically created in the previous step.
+
+6. The LDAP sync function queries the LDAP server for users in access groups and updates the role bindings in OCP.
+The sync can be configured to run at specific intervals (e.g. 15 minutes).
+
+7. The user attempts to login into OCP.
+
+8. OCP uses the [OpenIDIdentityProvider](https://docs.openshift.com/container-platform/3.9/install_config/configuring_authentication.html#OpenID) to query the OpenID server and check the user name and password provided are correct.
+
+9. OCP allocates access rights to the user based on the information stored in the role bindings.
