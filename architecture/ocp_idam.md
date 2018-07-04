@@ -1,5 +1,15 @@
 # OCP Identity & Access Management
 
+### Index
+
+- [Authenticating Users](#authenticating-users)
+- [Authorising Users](#authorising-users)
+- [IDAM Integration Scenarios](#idam-integration)
+    - [LDAP Authentication + LDAP Sync](#ldap-sync)
+    - [OpenID Authentication + LDAP Sync](#openid-sync)
+    - [OpenID Authentication - No LDAP Sync](#openid-nosync)
+
+<a ref="authenticating-users"></a>
 ## Authenticating Users
 
 ### LDAP Authentication
@@ -15,7 +25,7 @@ plus the provided password.
 
 In order to authenticate users, OCP can be configured to use the [OpenIDIdentityProvider](https://docs.openshift.com/container-platform/3.9/install_config/configuring_authentication.html#OpenID) using an [authorization code flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth).
 
-
+<a ref="authorising-users"></a>
 ## Authorising Users
 
 In order to authorise users in OCP, two LDAP groups per OCP project in the LDAP server, as follows:
@@ -42,14 +52,16 @@ for example:
 The following default cluster roles have role bindings to the LDAP server:
 
 |  Role | Description |
-|---|---|
+|:---|:---|
 | **admin** | Have rights to view any resource in the project and modify any resource in the project except for quota. |
 | **view** | Have rights to view most objects in a project. Cannot view or modify roles or bindings. |
 
-## IDAM integration 
+<a ref="idam-integration"></a>
+## IDAM integration Scenarios
 
 This section describes the integration points with the Identity and Access Management functions.
 
+<a ref="ldap-sync"></a>
 ### LDAP Authentication + LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for LDAP based authentication and LDAP sync for access control: 
@@ -79,6 +91,7 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 
 9. OCP allocates access rights to the user based on the information stored in the role bindings.
 
+<a ref="openid-sync"></a>
 ### OpenID Authentication + LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for OpenId authentication with LDAP sync for access control: 
@@ -110,7 +123,7 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 
 10. OCP allocates access rights to the user based on the information stored in the role bindings.
 
-
+<a ref="openid-nosync"></a>
 ### OpenID Authentication - No LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for OpenId authentication with no LDAP sync (users added to rolebindings at project provisioning time): 
