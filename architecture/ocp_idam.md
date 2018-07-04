@@ -109,3 +109,32 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 9. The OpenID server check credentials, in the LDAP server.
 
 10. OCP allocates access rights to the user based on the information stored in the role bindings.
+
+
+### OpenID Authentication - No LDAP Sync
+
+The following image shows the tasks required to set up an OCP project for OpenId authentication with no LDAP sync (users added to rolebindings at project provisioning time): 
+
+<img src="../img/idam_openid_nosync.png"></img>
+
+1. An organisation managing access via their LDAP servers uses its 
+standard on-boarding process to add and remove users from their servers.
+
+2. Either a user fills a form on a self service portal or an ops person executes an Ansible playbook to create one or more OCP projects.
+
+3. The playbook creates two groups per OCP project in the LDAP server. 
+The group names follow a specific naming convention. 
+One group is for standard project users and the other group is for project admins.
+
+4. The playbook check that the user(s) exist in the LDAP server. 
+Only existing users are mapped in OCP role bindings in the next step.
+
+5. The playbook creates the required objects in OCP, namely project(s), role bindings, and add users to the role bindings.
+
+6. The user attempts to login into OCP.
+
+7. OCP uses the [OpenIDIdentityProvider](https://docs.openshift.com/container-platform/3.9/install_config/configuring_authentication.html#OpenID) to query the OpenID server and check the user name and password provided are correct.
+
+8. The OpenID server check credentials, in the LDAP server.
+
+9. OCP allocates access rights to the user based on the information stored in the role bindings.
