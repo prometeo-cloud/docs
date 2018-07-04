@@ -46,9 +46,9 @@ Example stretched across 3 availability zones.
 
 | # | Server Role | Qty | vCPUs | Total vCPUs | Schedulable | Memory | Storage |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | Master/Etcd | 3 | 12 | 36 | no |
-| 2 | Infrastructure | 3 | 8 | 24 | no |
-| 3 | Router (Optional) | 3 | 12 | 8 | no |
+| 1 | Master/Etcd | 3 | 12 | 36 | no | 32 GB | /var/. -> 50GB | 
+| 2 | Infrastructure | 3 | 8 | 24 | no | 16 GB | - |
+| 3 | Router (Optional) | 3 | 12 | 8 | no | 16 GB | - |
 | 4 | *Compute* | 3 | 16 | *96* | *yes* |
 | 5 | Storage (CRS)<sup>[1]</sup> | 3 | 8 | 24 | no |
 | - | **Total** | **18** | **54** | **188** | - |
