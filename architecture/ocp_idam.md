@@ -62,7 +62,7 @@ The following default cluster roles have role bindings to the LDAP server:
 This section describes the integration points with the Identity and Access Management functions.
 
 <a ref="ldap-sync"></a>
-### LDAP Authentication + LDAP Sync
+### Scenario 1: LDAP Authentication + LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for LDAP based authentication and LDAP sync for access control: 
 
@@ -92,7 +92,7 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 9. OCP allocates access rights to the user based on the information stored in the role bindings.
 
 <a ref="openid-sync"></a>
-### OpenID Authentication + LDAP Sync
+### Scenario 2: OpenID Authentication + LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for OpenId authentication with LDAP sync for access control: 
 
@@ -124,7 +124,7 @@ The sync can be configured to run at specific intervals (e.g. 15 minutes).
 10. OCP allocates access rights to the user based on the information stored in the role bindings.
 
 <a ref="openid-nosync"></a>
-### OpenID Authentication - No LDAP Sync
+### Scenario 3: OpenID Authentication - No LDAP Sync
 
 The following image shows the tasks required to set up an OCP project for OpenId authentication with no LDAP sync (users added to rolebindings at project provisioning time): 
 
@@ -135,19 +135,18 @@ standard on-boarding process to add and remove users from their servers.
 
 2. Either a user fills a form on a self service portal or an ops person executes an Ansible playbook to create one or more OCP projects.
 
-3. The playbook creates two groups per OCP project in the LDAP server. 
-The group names follow a specific naming convention. 
-One group is for standard project users and the other group is for project admins.
+3. The playbook connects to the LDAP server and verifies that the user(s) exist. If not, they wont't be added to the role bindings later.
 
-4. The playbook check that the user(s) exist in the LDAP server. 
-Only existing users are mapped in OCP role bindings in the next step.
+4. The playbook creates the required objects in OCP, namely project(s), role bindings, and add users to the role bindings.
 
-5. The playbook creates the required objects in OCP, namely project(s), role bindings, and add users to the role bindings.
+5. The user attempts to login into OCP.
 
-6. The user attempts to login into OCP.
+6. OCP uses the [OpenIDIdentityProvider](https://docs.openshift.com/container-platform/3.9/install_config/configuring_authentication.html#OpenID) to query the OpenID server and check the user name and password provided are correct.
 
-7. OCP uses the [OpenIDIdentityProvider](https://docs.openshift.com/container-platform/3.9/install_config/configuring_authentication.html#OpenID) to query the OpenID server and check the user name and password provided are correct.
+7. The OpenID server check credentials, in the LDAP server.
 
-8. The OpenID server check credentials, in the LDAP server.
+8. OCP allocates access rights to the user based on the information stored in the role bindings.
 
-9. OCP allocates access rights to the user based on the information stored in the role bindings.
+**NOTES** 
+
+- the management of access rights is done purely within OCP, no LDAP server is involved. This means that role bindings in OCP need to be updated (by the automation via the OCP API) as user access requirements to OCP projects change over the lifecycle of an application. 
