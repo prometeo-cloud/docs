@@ -1,6 +1,7 @@
 # Reference Architecture 
 
 - [Overview](overview.md)
+- [Bill of Materials](bom.md)
 - [Control Plane](control_plane.md)
 - [OCP topology](topology.md)
 - [OCP Identity and Access Management](idam.md)
