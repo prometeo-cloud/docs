@@ -51,7 +51,7 @@ Example stretched across 3 availability zones.
 | 3 | Router (Optional) | 3 | 12 | 8 | no | 16 GB | - |
 | 4 | *Compute* | 3 | 16 | *96* | *yes* |
 | 5 | Storage (CRS)<sup>[1]</sup> | 3 | 8 | 24 | no |
-| - | **Total** | **18** | **54** | **188** | - |
+| - | **Total** | **15** | **54** | **188** | - |
 
 <sup>[1]</sup>: CRS is separate to OCP.
 
@@ -59,7 +59,7 @@ Example stretched across 3 availability zones.
 
 | Server Role | Description | Subscription | SKU | Qty | vCPU/VM |
 |---|---|---|:---:|:---:|:---:|
-| OCP Compute node | Subs for nodes running app workloads (compute only). | Red Hat OpenShift Container Platform, Premiun, 2-Core | MCT2735 | 24<sup>[1]</sup> | 96 |  
+| OCP Compute node | Subs for nodes running app workloads (compute only). | Red Hat OpenShift Container Platform, Premium, 2-Core | MCT2735 | 24<sup>[1]</sup> | 96 |  
 | OCP Node | Subs for managing all OCP nodes with Satellite. | Smart Management | RH00031 | 9<sup>[2]</sup> | N/A |
 | CRS Storage | Subs for Container Ready Storage nodes. | Container Storage Add-On for OpenShift Container Platform, Premium (3 Nodes) | RS00148 | 3 | N/A |
 | CRS Storage | Subs for CRS RHEL OS and managing Container Ready Storage nodes with Satellite. | Red Hat Enterprise Linux Server with Smart Management, Premium (Physical or Virtual Nodes)| RH00008 | 2 <sup>[3]</sup> | N/A |
@@ -70,7 +70,7 @@ Example stretched across 3 availability zones.
  - 4 units per compute node => 6 nodes * 4 unit/node = **24 units**
  
 <sup>[2]</sup>: covers for the 15 OCP RHEL nodes to be managed by Satellite, the sample calculation is:
- - 2 VMs/module * 9 module = **18 VMs**, or
- - 18 VMs / 2 VMs/module = **9 modules**
+ - 2 VMs/module * 8 module = **15 VMs**, or
+ - 15 VMs / 2 VMs/module = **8 modules**
  
 <sup>[3]</sup>: covers for the 3 RHEL OS for CRS to be managed by Satellite.
